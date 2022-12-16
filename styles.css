@@ -48,7 +48,174 @@ header{
 
 .logo {
     height: 40%;
+}
+
+.navbar, 
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
+.navbar{
+    gap: 150px;
+}
+
+.navbar-list{
+    gap: 30px;
+
+}
+
+.navbar-list a {
+   color: var(--text-gray);
+   font-size: 14px;
+}
+
+.navbar-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    color: var(--text-white);
+    cursor: pointer;
+}
+/* Main */
+
+/* El main va a servir de contenedor principal de todas las secciones y además para darle un fondo a las secciones que van a estar limitadas a 1200px máximo y centrarlas en la página para resoluciones grandes*/
+
+main {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+ }
+
+/* Hero */
+
+#hero {
+    margin-top: 65px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    /* Le doy un ancho máximo para que nunca ocupe menos en Desktop */
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info p > span {
+    font-weight: 800;
+}
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-card {
+    width: 300px;
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.hero-card h3 {
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-card span {
+    background-color: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 3px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.hero-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card-creator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-card-creator img {
+    height: 40px;
+    width: 40px;
+
+}
+
+.creator-info p:first-child, 
+.hero-card-price p {
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.hero-card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
 
