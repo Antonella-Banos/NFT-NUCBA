@@ -32,7 +32,8 @@ list-style-type: none;}
 /* Header */
 
 header{ 
-    background: var(--secondary);
+    /* background: var(--secondary); */
+    background: linear-gradient(to bottom, #121e3c, var(--background) );
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -124,7 +125,11 @@ main {
     /* Le doy un ancho máximo para que nunca ocupe menos en Desktop */
     min-width: 500px;
     font-weight: 800;
-    color: var(--text-white);
+    /* color: var(--text-white); */
+    background: linear-gradient(to top, #30cfd0, #c43ad6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .hero-info p {
@@ -485,3 +490,10 @@ footer span {
     gap: 20px;
 }
 
+/* Ocultar hamburguesa y checkbox */
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+    display: none;
+}

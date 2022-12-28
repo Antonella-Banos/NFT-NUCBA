@@ -8,11 +8,19 @@
     <title>NFT Landing</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css"> 
 </head>
 <body>
  <header>
     <img src="img/logo.png" alt="Logo de NUCBA NFT" class="logo">
     <nav class="navbar">
+        <!-- Agregamos el label con la img del menú adentro y el input. A su vez los linkeamos entre sí. -->
+
+        <label for="menu-toggle" class="menu-label">
+            <img src="img/menu.png" alt="" class="menu-icon">
+        </label>
+        <input type="checkbox" id="menu-toggle">
+
         <ul class="navbar-list"> 
             <!-- La dirección de los enlaces los vemos después con animaciones y transiciones -->
             <li> <a href="">Home</a> </li>
