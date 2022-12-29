@@ -81,4 +81,135 @@
         text-align: center;
         width: 80%;
     }
+
+    .info-cards-container {
+        max-width: 80%;
+    }
+
+    /* Discover */
+
+    #discover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .discover-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discover-cards {
+        flex-direction: column;
+    }
+
+    .discover-cards img {
+        width: 90%;
+    }
+
+    /* Products */
+
+    .categories {
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+
+    .category {
+        width: 120px;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 576px) {
+    /* Modificar el carrito para celular */
+
+    .cart {
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    /* Hero */
+
+    .hero-info p {
+        width: 70%;
+        max-width: unset;
+    }
+
+    /* Info */
+
+    .info-card {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+    }
+
+    .info-card p {
+        width: 90%;
+
+    }
+
+    /* Discover */
+
+    #discover {
+        width: 80%;
+    }
+
+    #discover h2 {
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .discover-text {
+        width: 100%;
+        padding: 10px;
+        line-height: 30px;
+        gap: 50px;
+    }
+
+    .discover-text a {
+        font-size: 20px;
+    }
+
+    .discover-cards {
+        gap: 20px;
+    }
+
+    .discover-cards img {
+        width: 100%;
+    }
+
+    /* Products */
+
+    .categories {
+        max-width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category {
+        width: 120px;
+    }
+
+    .products-container {
+        width: 80%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
 }
